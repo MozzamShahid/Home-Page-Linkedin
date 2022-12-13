@@ -1,0 +1,252 @@
+/* the props */
+@import "https://unpkg.com/open-props";
+
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+/* just dark or light themes */
+@import "https://unpkg.com/open-props/normalize.dark.min.css";
+@import "https://unpkg.com/open-props/buttons.dark.min.css";
+@import "https://unpkg.com/open-props/normalize.light.min.css";
+@import "https://unpkg.com/open-props/buttons.light.min.css";
+
+/* individual imports */
+@import "https://unpkg.com/open-props/indigo.min.css";
+@import "https://unpkg.com/open-props/indigo-hsl.min.css";
+@import "https://unpkg.com/open-props/easings.min.css";
+@import "https://unpkg.com/open-props/animations.min.css";
+@import "https://unpkg.com/open-props/sizes.min.css";
+@import "https://unpkg.com/open-props/gradients.min.css";
+/* see PropPacks for the full list */
+
+body {
+    background-color: #ffffff;
+}
+
+/* Here is the header code*/
+.heroo{ 
+    width: 100%;
+    height: 15vh;
+    background: #ffffff;
+    box-shadow: var(--shadow-6);
+    z-index: 2;
+}
+
+.logo{
+    width: 10%;
+    size: auto;
+    justify-content: center;
+    margin: -10px 10px;
+}
+
+nav {
+    display: flex;
+    width: 94%;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+  /* visited link */
+  a:visited {
+    color: var(--indigo-7);
+  }
+.primary a:visited {
+    color: white;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+header { 
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    background: var(--grape-0);
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.hero {
+    display: grid;
+    padding: var(--size-10);
+    gap: var(--size-5);
+}
+/* Secound Section*/
+.textmain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+}
+
+.hero-center{
+  padding: var(--size-10);
+  gap: var(--size-5);
+  margin-left: 5%;
+}
+
+.textmain-message {
+    color: var(--indigo-7);
+    font-size: var(--size-9);
+    text-align: center;
+}
+
+.textmainunder{
+    text-align: center;
+    width: 100%;
+    margin-left: 80px;
+    color: var(--gray-7);
+    font-size: var(--font-size-4);
+    position: absolute;
+    font-style: normal;
+    line-height: 109.52%;
+    color: #8D8D8D;
+}
+
+.cbd-1{
+position: absolute;
+width: 59.68px;
+height: 59.68px;
+
+background: url(.png), #5271FF;
+border-radius: 11px;
+transform: rotate(-18.24deg);
+}
+
+.cbd-2{
+    position: absolute;
+    width: 59.08px;
+    height: 59.08px;
+    left: 1225.89px;
+    top: 900px;
+    
+}
+
+.cbd-3{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 985.89px;
+    top: 975.89px;
+
+    background: url(.png);
+}
+/* Secound Section*/
+.hero-message{
+    display: grid;
+    grid-template-columns: max-content;
+    color: var(--gray-9);
+    line-height: var(--font-lineheight-0);
+}
+
+.hero-message > div:last-child{
+    color: var(--indigo-7);
+}
+
+.under-message {
+    color: var(--gray-7);
+    font-size: var(--font-size-4);
+    margin-block-end: var(--size-3);
+}
+
+.button-list{
+    display: flex;
+    gap: var(--size-3);
+}
+
+button{
+    background: rgb(255, 255, 255);
+    color: var(--indigo-8);
+    font-size: var(--font-size-3);
+    padding-inline: var(--size-8);
+    padding-block: var(--size-3);
+    border-radius: var(--size-2);
+    box-shadow: var(--border-shadow-4);
+}
+
+button.primary{
+    background: var(--indigo-8);
+    text-shadow: 10 10px 20 var(--indigo-7);
+    color: white;
+    box-shadow: var(--shadow-6);
+}
+
+
+button.primary:hover{
+    background: var(--indigo-7);
+    box-shadow: var(--shadow-4);
+}
+
+.promo-art{
+    align-items: stretch;
+}
+
+.promo-art > img {
+    block-size: 100%;
+    object-fit: cover;
+}
+
+.review{
+    background-color: #5271FF;
+    width: 100%;
+    height: 80vh;
+}
+
+.reviewtext {
+    color: white;   
+    font-size: var(--size-9);
+    text-align: center;
+    padding: var(--size-5);
+    gap: var(--size-5);
+    margin-left: 5%;
+}
+
+.review-one{
+    width: 500px;
+    height: 220px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+.paddinginside{
+    padding: var(--size-4);
+    margin-left: 50px;
+}
+
+.image{
+}
+
+#human {
+    width 20%;
+    height: 20%;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
